@@ -122,7 +122,6 @@ a {
       margin-bottom: 35px;
       font-weight: normal;
     }
-
     .slide-title {
       font-weight: bold;
       font-size: 55px;
@@ -166,18 +165,20 @@ a {
   .slider-control {
     display: flex;
     justify-content: center;
-    .control-line {
+    .swiper-pagination-bullet {
       width: 40px;
       height: 7px;
       background-color: #cecece;
       display: inline-block;
       margin-right: 15px;
+      border-radius: 0;
+      opacity: 1;
       &:last-child {
         margin-right: 0;
       }
-      &.active {
-        background-color: #d7b399;
-      }
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #d7b399;
     }
   }
 }
